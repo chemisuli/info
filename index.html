@@ -47,6 +47,7 @@
 
     .page {
       min-height: 100vh;
+      min-height: 100svh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -74,10 +75,6 @@
     }
 
     .bank-heading {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 12px;
       margin-bottom: 14px;
     }
 
@@ -89,14 +86,6 @@
       font-weight: 400;
       letter-spacing: 0.01em;
       color: var(--cream);
-    }
-
-    .bank-index {
-      font-family: Arial, sans-serif;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      color: rgba(255, 244, 229, 0.55);
     }
 
     .detail-row {
@@ -215,8 +204,11 @@
 
     @media (max-width: 520px) {
       .page {
+        min-height: 100svh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding: 14px;
-        align-items: flex-start;
       }
 
       .payment {
@@ -254,7 +246,6 @@
       <section class="bank">
         <div class="bank-heading">
           <h2 class="bank-name">TBC Bank</h2>
-          <span class="bank-index">01</span>
         </div>
 
         <div class="detail-row">
@@ -277,7 +268,6 @@
       <section class="bank">
         <div class="bank-heading">
           <h2 class="bank-name">Credo Bank</h2>
-          <span class="bank-index">02</span>
         </div>
 
         <div class="detail-row">
@@ -300,10 +290,6 @@
       <section class="paypal">
         <div class="paypal-line">
           <h2 class="paypal-title">PayPal</h2>
-
-          <!-- Later replace this span with:
-          <a class="copy-button" href="YOUR_PAYPAL_LINK" target="_blank">Open</a>
-          -->
           <span class="paypal-placeholder">Link coming soon</span>
         </div>
       </section>
